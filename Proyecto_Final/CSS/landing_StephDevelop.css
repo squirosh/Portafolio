@@ -1,0 +1,451 @@
+
+
+/*etiquetas general*/
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    font-size: xx-large;
+}
+
+p{
+    font-size: larger;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+blockquote{
+    padding: 5px;
+}
+
+p, h1, h2, h3, h4, a{
+    line-height: 30px;
+}
+.proyectosSamples {
+    display: flex;
+
+    width: 100%;
+}
+
+.proyectosSamples img{
+    margin: 30px;
+    width: 90%;
+}
+.proyectosSamples a{
+    width: 45%;
+}
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.1); 
+}
+
+/*barra principal*/
+.posicion-fija{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 1000;
+}
+
+.barra {
+    background-color:#0F1626 ;  
+    overflow: auto;
+    width: 100%;
+}
+
+.barra a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 19px; 
+    max-height: 30px;
+}
+
+.barra a:hover {
+    background-color:#FF533D;
+    color: rgb(255, 254, 254);
+}
+
+.barra a.activo {
+    background-color:#FF533D; 
+    color: rgb(250, 244, 244);
+}
+
+.barra-logo{
+    float: right;
+    padding-right: 30px;
+}
+
+.barra-logo img{
+    max-height: 35px;
+}
+
+
+/*logo*/
+.fondoprinc{
+    overflow: auto;
+    background-color: #0F1626;
+    text-align: center;
+}
+.logo-centrado{
+    width: 50%;
+    padding-bottom: 20px;
+    height: 700px;
+    background-image: url("../IMAGENES/logofondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+/*Descripción*/
+.contenedor-descripcion{
+    background-color:white;   
+    padding: 45px 40px 0px 40px; 
+    border: 5px solid #fff;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.contenedor-descripcion p{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.contenedor-descripcion .texto-centrado{
+    text-align: center;
+}
+
+/*Misión y visión*/
+.contenedor-mision-vision{
+    background-color:#FFFFFF;  
+    padding: 20px;
+    overflow: auto;  
+    margin-top: 100px;
+
+}
+
+.contenedor-mision, .contenedor-vision{
+    background-color:#0F1626;
+    width: 49%;
+    padding: 20px;
+    float: left; 
+    border-radius: 10px;  
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.contenedor-mision{
+    margin-right: 20px;
+}
+
+
+
+/* contenedor valores*/
+.contenedor-valores{
+    padding: 30px; 
+    text-align: center;
+    width: 100%; 
+    overflow: auto;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.titulo-valores{
+    width: 100%;
+}
+
+.honestidad{
+    background-image: url(https://i.ibb.co/y6sMyPr/Cooperacion.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 30%;
+    float: left;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+
+}
+
+.tolerancia{
+    background-image: url(https://i.ibb.co/6rdXZ1T/Cooperacion-1.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 30%;
+    float: left;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+}
+
+.responsabilidad{
+    background-image: url(https://i.ibb.co/z5X82kG/Cooperacion-5.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 30%;
+    float: left;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+}
+
+.eficiencia{
+    background-image: url(https://i.ibb.co/S5gHG0w/Cooperacion-6.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 45%;
+    float: left;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+}
+
+.integridad{
+    background-image: url(https://i.ibb.co/hfrW19G/Cooperacion-7.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 45%;
+    float: left;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+}
+
+.honestidad:hover, .tolerancia:hover, .responsabilidad:hover, .eficiencia:hover, .integridad:hover{
+    background-color: #0F1626;  
+    background-image: none;
+    transition-duration: 250ms;
+    color: #FFFFFF;
+    height: 220px;
+    margin-bottom: -50px;
+}
+
+.valor-oculto{
+    opacity: 0;
+    position: relative;
+}
+
+.valor-oculto:hover{
+    opacity: 100;
+    transition-duration: 250ms;
+}
+
+/*Imagen de fondo*/
+.imagen-fondo{
+    background-image: url(../Multimedia/Imagenes/fondo3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #facac5;
+    margin-bottom: 20px;
+    min-height: 417px;
+}
+
+
+.integrante-cuadro{
+    width: 100%;
+}
+
+.img-redonda {
+
+    border-radius:150px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.img-nombre{
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;  
+}
+
+.zoom{
+    transform: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.zoom:hover{
+   transform: scale(1.2);
+   transition-duration: 200ms;
+   background-color: #0F1626;
+}   
+
+/*Servicios*/
+.contenedor-servicios{
+    background-color: #FFFFFF;
+    overflow: auto;
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+
+.contenedor-servicios h1{
+    margin-top: 10px;
+}
+
+.contenedor-servicios div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.contenedor-servicios2{
+    overflow: auto;
+    width: 100%;
+}
+
+.contenedor-servicio-abc{
+    float: left;
+    width: 32%;
+    background-color: #0F1626;
+    margin-left: 10px;
+    border-radius: 10px; 
+    text-align: center;
+    height: 150px;
+    color: #FFFFFF;
+}
+
+.contenedor-servicios2 p:hover{
+    font-weight: bold;    
+}
+
+
+.contenedor-servicios3 p{
+    text-align: center;
+}
+
+/*Contáctenos*/
+.contenedor-contacto {
+    overflow: auto;
+    width: 100%;
+    background-color: #0F1626;
+    color: #FFFFFF; 
+}
+
+.tamanio-imagen{
+    height: 180px;
+    text-align: center;
+}
+
+.tamanio-imagen2{
+    height: 100px;
+}
+
+.contacto-izq{
+    float: left;
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contacto-izq h1, .contacto-izq p{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.contacto-izq img{
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+.contacto-der {
+    border-radius: 5px;
+    border-left: solid #FFFFFF 2px;
+    padding: 40px;
+    float: left;
+    width: 50%;
+} 
+
+.cajas, select, textarea {
+    width: 95%; 
+    padding: 12px;  
+    border: 1px solid rgb(151, 149, 149); 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
+
+
+.botonEnviar {
+    background-color: #FF533D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+  
+.botonEnviar:hover {
+    background-color: #FF533D;
+} 
+
+.ancho{
+    width: 100%;
+}
+
+
+/*Información de contacto*/
+.contactenos-texto p{   
+    text-align: center;  
+}  
+
+/*footer*/
+.footer{
+    overflow: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer p{
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+.copyright{
+    float: left;
+    width: 85%;
+}
+
+ 
+
+/*validar*/
+.oculto{ 
+    display:none;
+}
+.texto-rojo{
+    padding-top: 0;
+    margin-top: 0;
+    color: red;
+    text-align: center;
+}
